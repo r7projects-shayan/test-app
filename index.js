@@ -11,4 +11,10 @@ app.get('/', (req, res) => {
 app.get("/about", (req, res) => {
     res.send("<h2>Hello world this is about page</h2>");
 })
+
+app.get("/new", (req, res) => {
+
+    res.send("<h1>this is the new added page</h1>");
+
+})
 app.listen(process.env.PORT || 3000)
